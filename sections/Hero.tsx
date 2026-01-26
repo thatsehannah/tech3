@@ -1,11 +1,10 @@
-import { Logo } from "@/components";
-import React from "react";
+import { Banner, Logo } from "@/components";
 
 export const Hero = () => {
   return (
     <section className='w-screen h-screen flex justify-center items-center'>
       <div>
-        <Logo />
+        <Banner />
       </div>
     </section>
   );
