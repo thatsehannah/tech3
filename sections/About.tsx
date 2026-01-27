@@ -65,7 +65,7 @@ export const About = () => {
             <p className='font-main text-5xl font-bold'>
               Flagship <span className='text-accent3'>Creations</span>
             </p>
-            <hr className='h-0.5 w-3/4 bg-linear-to-r from-accent3/40 to-background border-0 rounded-lg' />
+            <hr className='h-0.5 w-3/4 bg-linear-to-r from-accent3/30 to-transparent border-0 rounded-lg' />
           </div>
           <div className='flex justify-between items-center gap-32'>
             <ProjectCard

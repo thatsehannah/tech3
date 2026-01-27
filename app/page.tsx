@@ -1,4 +1,5 @@
 import { About, Experience, Hero, Services } from "@/sections";
+import { TechStack } from "@/sections/TechStack";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Services />
       <About />
       <Experience />
+      <TechStack />
     </main>
   );
 }

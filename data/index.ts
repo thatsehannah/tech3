@@ -1,3 +1,4 @@
 import { experiences } from "./experiences";
+import { techStack } from "./tech";
 
-export { experiences };
+export { experiences, techStack };
