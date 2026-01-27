@@ -1,4 +1,5 @@
 import { Banner, LinkButton, Logo } from "@/components";
+import { Circle } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -7,7 +8,15 @@ export const Hero = () => {
       className='w-screen h-screen flex justify-center items-center'
     >
       <div className='w-1/2 flex flex-col justify-center items-center p-4'>
-        <Banner />
+        <Banner className='gap-2 border-accent3 bg-accent3/20'>
+          <Circle
+            className='fill-accent3 border-0 stroke-0 animate-pulse'
+            size={16}
+          />
+          <p className='uppercase text-accent3 font-bold font-main tracking-widest text-xs'>
+            available to hire
+          </p>
+        </Banner>
         <Logo />
         <div>
           <p className='font-main text-gray-300 text-center text-lg'>
