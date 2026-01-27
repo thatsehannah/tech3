@@ -1,4 +1,4 @@
-import { Banner, Logo } from "@/components";
+import { Banner, LinkButton, Logo } from "@/components";
 
 export const Hero = () => {
   return (
@@ -14,9 +14,21 @@ export const Hero = () => {
             maxime neque corporis ab corrupti odit?
           </p>
         </div>
-        <div className='flex justify-center items-center gap-12 p-4'>
-          <div>Button</div>
-          <div>Button</div>
+        <div className='flex justify-center items-center gap-12 p-4 mt-12'>
+          <div>
+            <LinkButton
+              text='View Projects'
+              className='bg-accent2 text-white text-lg font-medium'
+              target='projects'
+            />
+          </div>
+          <div>
+            <LinkButton
+              text='Contact Us'
+              className='bg-gray-600/30 text-white text-lg font-extralight'
+              target='contact'
+            />
+          </div>
         </div>
       </div>
     </section>
