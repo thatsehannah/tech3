@@ -2,31 +2,31 @@ import { ExperienceItem } from "@/types";
 
 export const experiences: ExperienceItem[] = [
   {
-    position: "Lead Full Stack Eningeer",
-    company: "Cyberdyne Systems",
-    startEndYear: "2022 - Present",
+    position: "Software Engineer II",
+    company: "GoFundMe",
+    startEndYear: "2021 - 2022",
     duties:
-      "Spearheaded the migration to microservices architecture using Node.js and Docker. Improved system reliability by 99.9%",
+      "Automated CI/CD metrics and led a Docker-to-Kubernetes migration to improve deployment consistency and team velocity. Improved developer productivity by optimizing internal tooling and enabling parallel frontend/backend development.",
   },
   {
-    position: "Senior UI/UX Designer",
-    company: "Ocean View Tech",
-    startEndYear: "2020 - 2022",
+    position: "Software Developer",
+    company: "Rapattoni Corporation",
+    startEndYear: "2019 - 2020",
     duties:
-      "Designed award-winning interfaces for fintech applications. Conducted user research and high-fidelity prototyping in Figma",
+      "Built and maintained white-labeled iOS and Android apps for MLS enterprise clients, serving thousands of users with real-time listings. Improved platform stability and user experience by reducing UI/UX bugs and leading scalable legacy data migrations.",
   },
   {
-    position: "Frontend Developer",
-    company: "VaporWave Inc.",
-    startEndYear: "2018 - 2020",
+    position: "Software Engineer",
+    company: "L.A. Care Health Plan",
+    startEndYear: "2018 - 2019",
     duties:
-      "Built responsive web application using React and Tailwind CSS. Optimized frontend performance resulting in 40% faster load times",
+      "Built automation and pre-validation tools to eliminate data errors, reduce manual work, and prevent production incidents. Debugged and resolved critical infrastructure issues, improving platform stability and system uptime.",
   },
   {
-    position: "Frontend Developer",
-    company: "VaporWave Inc.",
-    startEndYear: "2018 - 2020",
+    position: "Software Engineer",
+    company: "Walmart",
+    startEndYear: "2018 - 2018",
     duties:
-      "Built responsive web application using React and Tailwind CSS. Optimized frontend performance resulting in 40% faster load times",
+      "Automated floor plan workflows with custom SQL scripts and third-party integrations, reducing manual effort and data errors. Improved code reliability and long-term maintainability by implementing comprehensive unit and integration testing.",
   },
 ];

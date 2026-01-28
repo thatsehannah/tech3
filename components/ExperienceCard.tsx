@@ -30,7 +30,7 @@ export const ExperienceCard = ({ leftAlign, item }: ExperienceCardProps) => {
           {item.company}
         </p>
         <p
-          className={`font-main text-neutral-400 text-[1rem] w-full xl:w-3/4 ${leftAlign ? "text-left" : "text-right"}`}
+          className={`font-main text-neutral-400 text-[1rem] w-full lg:w-[95%] ${leftAlign ? "text-left" : "text-right"}`}
         >
           {item.duties}
         </p>
