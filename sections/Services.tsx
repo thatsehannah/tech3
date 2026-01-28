@@ -9,7 +9,7 @@ export const Services = () => {
           Our <span className='text-accent3'>Services</span>
         </p>
         <hr className='h-1 w-21 mt-2.5 mb-5 rounded-md border-0 bg-linear-to-r from-accent2 to-accent3' />
-        <p className='font-main text-lg text-neutral-400  xl:w-1/2'>
+        <p className='font-main text-lg text-neutral-400 xl:w-1/2'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
           consectetur harum numquam sequi quis illum totam! Beatae molestiae
           quae omnis aliquid corporis.
