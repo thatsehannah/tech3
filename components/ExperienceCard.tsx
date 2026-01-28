@@ -9,7 +9,7 @@ interface ExperienceCardProps {
 export const ExperienceCard = ({ leftAlign, item }: ExperienceCardProps) => {
   return (
     <div
-      className={`rounded-lg ring-1 ring-white/20 ${leftAlign ? "bg-linear-to-r from-background to-white/10" : "bg-linear-to-l from-background to-white/10"}`}
+      className={`rounded-lg ring-1 ring-neutral-700 ${leftAlign ? "bg-linear-to-r from-background to-white/10" : "bg-linear-to-l from-background to-white/10"}`}
     >
       <div
         className={`flex flex-col ${leftAlign ? "items-start" : "items-end"} p-4`}
@@ -26,7 +26,7 @@ export const ExperienceCard = ({ leftAlign, item }: ExperienceCardProps) => {
           {item.company}
         </p>
         <p
-          className={`font-main text-gray-300 w-3/4 ${leftAlign ? "text-left" : "text-right"}`}
+          className={`font-main text-neutral-400 w-3/4 ${leftAlign ? "text-left" : "text-right"}`}
         >
           {item.duties}
         </p>

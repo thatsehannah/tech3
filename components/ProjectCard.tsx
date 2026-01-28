@@ -17,7 +17,7 @@ export const ProjectCard = ({
   link,
 }: ProjectCardProps) => {
   return (
-    <div className='border-8 border-slate-950 rounded-2xl w-2/3'>
+    <div className='border-8 border-neutral-950 rounded-2xl w-2/3'>
       <div className='w-full h-112 relative'>
         <Image
           src='/placeholder-img.jpg'
@@ -25,7 +25,7 @@ export const ProjectCard = ({
           className='object-cover rounded-t-lg'
           fill
         />
-        <div className='flex items-center gap-3 justify-center absolute bottom-4 left-4 rounded-2xl bg-slate-950 w-fit p-3'>
+        <div className='flex items-center gap-3 justify-center absolute bottom-4 left-4 rounded-2xl bg-neutral-900 w-fit p-3'>
           {type === "mobile" ? (
             <Smartphone
               className='fill-accent3 stroke-1'
@@ -44,7 +44,7 @@ export const ProjectCard = ({
       </div>
       <div className='flex flex-col p-8 bg-background rounded-b-lg'>
         <p className='font-main font-bold text-3xl mb-4'>{title}</p>
-        <p className='font-main text-gray-300 mb-6'>
+        <p className='font-main text-neutral-400 mb-6'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
           mollitia porro? Doloribus obcaecati quod labore accusamus voluptatibus
           quo,{" "}

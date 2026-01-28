@@ -2,9 +2,6 @@ export const Logo = () => {
   return (
     <div className='p-3 flex justify-center items-center'>
       <div className='flex flex-col justify-center items-center gap-2'>
-        <p className='text-lg text-gray-400 uppercase font-main tracking-widest'>
-          Welcome To
-        </p>
         <div className='flex'>
           <div className='relative'>
             <p className='absolute text-9xl font-extrabold text-transparent bg-linear-to-r from-accent3 via-white to-accent2 bg-clip-text blur-xl opacity-40 font-logo'>

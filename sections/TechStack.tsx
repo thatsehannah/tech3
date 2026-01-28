@@ -9,7 +9,7 @@ export const TechStack = () => {
           <p className='text-5xl font-main font-bold mb-4'>
             Our <span className='text-accent3'>Tech Stack</span>
           </p>
-          <p className='text-gray-300 font-main text-lg'>
+          <p className='text-neutral-400 font-main text-lg'>
             Powered by the most reliable modern technologies.
           </p>
         </div>

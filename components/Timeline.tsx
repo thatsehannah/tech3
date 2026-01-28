@@ -9,7 +9,7 @@ export const Timeline = <T,>({
 }) => {
   return (
     <div className='relative w-3/4 mx-auto mt-24 '>
-      <div className='absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-linear-to-b from-white/30 via-white/20 to-transparent' />
+      <div className='absolute left-1/2 top-0 bottom-0 w-0.5 -translate-x-1/2 bg-linear-to-b from-neutral-600 to-transparent' />
 
       <div className='flex flex-col gap-16 '>
         {items.map((item, idx) => {

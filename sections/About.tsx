@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutCard = ({ text, subText }: { text: string; subText: string }) => {
   return (
-    <div className='flex flex-col p-6 ring-1 ring-white/20 w-2/5 bg-background rounded-md'>
+    <div className='flex flex-col p-6 ring-1 ring-neutral-700 w-2/5 bg-background rounded-md'>
       <p className='text-4xl font-main font-black mb-1'>{text}</p>
       <p className='text-sm font-main text-gray-300 uppercase'>{subText}</p>
     </div>
@@ -13,7 +13,7 @@ const AboutCard = ({ text, subText }: { text: string; subText: string }) => {
 export const About = () => {
   return (
     <section id='about'>
-      <div className='ring-1 ring-white/20 px-16 bg-radial-[at_95%_15%] from-white/20 to-background to-75%'>
+      <div className='ring-1 ring-neutral-700 px-16 bg-radial-[at_95%_15%] from-neutral-700 to-background to-75%'>
         <div className='flex justify-between py-24'>
           <div className='relative'>
             <div className='absolute -inset-2 rounded-lg bg-linear-to-r from-accent2 to-accent3 opacity-75 blur-lg animate-pulse'></div>
@@ -38,7 +38,7 @@ export const About = () => {
                 Digital Artisans
               </span>
             </p>
-            <p className='font-main text-xl text-gray-300 mt-8 leading-8'>
+            <p className='font-main text-xl text-neutral-400 mt-8 leading-8'>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
               eligendi eum quos perspiciatis, voluptate eveniet minus labore
               porro amet modi sapiente iste earum totam asperiores excepturi.
