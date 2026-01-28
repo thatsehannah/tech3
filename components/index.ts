@@ -6,6 +6,7 @@ import { ProjectCard } from "./ProjectCard.tsx";
 import { Timeline } from "./Timeline.tsx";
 import { InputField } from "./InputField.tsx";
 import { TextareaField } from "./TextareaField.tsx";
+import { ContactForm } from "./ContactForm.tsx";
 
 export {
   Logo,
@@ -16,4 +17,5 @@ export {
   Timeline,
   InputField,
   TextareaField,
+  ContactForm,
 };
