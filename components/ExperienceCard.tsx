@@ -9,7 +9,7 @@ interface ExperienceCardProps {
 export const ExperienceCard = ({ leftAlign, item }: ExperienceCardProps) => {
   return (
     <div
-      className={`rounded-lg ring-1 ring-neutral-700 ${leftAlign ? "bg-linear-to-r from-background to-white/10" : "bg-linear-to-l from-background to-white/10"} w-full`}
+      className={`rounded-lg ring-1 ring-neutral-700 ${leftAlign ? "bg-linear-to-r from-background to-white/10" : "bg-linear-to-l from-background to-white/10"} w-full lg:w-1/2`}
     >
       <div
         className={`flex flex-col ${leftAlign ? "items-start" : "items-end"} p-4`}
