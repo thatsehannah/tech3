@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #211016;
+  --background: oklch(0.1998 0.0302 357.52);
+  --background2: oklch(0.1504 0.0302 357.52);
   --foreground: #ffffff;
   --accent1: oklch(0.717 0.126273 214.3985);
   --accent2: oklch(0.6471 0.232 1.71);
@@ -11,6 +12,7 @@
 
 @theme inline {
   --color-background: var(--background);
+  --color-background2: var(--background2);
   --color-foreground: var(--foreground);
   --color-accent1: var(--accent1);
   --color-accent2: var(--accent2);

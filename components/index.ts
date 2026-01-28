@@ -4,5 +4,16 @@ import { LinkButton } from "./LinkButton.tsx";
 import { ServiceCard } from "./ServiceCard.tsx";
 import { ProjectCard } from "./ProjectCard.tsx";
 import { Timeline } from "./Timeline.tsx";
+import { InputField } from "./InputField.tsx";
+import { TextareaField } from "./TextareaField.tsx";
 
-export { Logo, Banner, LinkButton, ServiceCard, ProjectCard, Timeline };
+export {
+  Logo,
+  Banner,
+  LinkButton,
+  ServiceCard,
+  ProjectCard,
+  Timeline,
+  InputField,
+  TextareaField,
+};
