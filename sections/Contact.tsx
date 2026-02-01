@@ -1,5 +1,4 @@
 import { ContactForm } from "@/components";
-import React from "react";
 
 export const Contact = () => {
   return (

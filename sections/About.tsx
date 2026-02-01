@@ -1,4 +1,5 @@
 import { ProjectCard } from "@/components";
+import { projects } from "@/data";
 import Image from "next/image";
 
 const AboutCard = ({ text, subText }: { text: string; subText: string }) => {
@@ -13,7 +14,7 @@ const AboutCard = ({ text, subText }: { text: string; subText: string }) => {
 export const About = () => {
   return (
     <section id='about'>
-      <div className='px-8 lg:px-16 pb-16 ring-1 ring-neutral-700 bg-radial-[at_95%_15%] from-neutral-700 to-background to-75%'>
+      <div className='px-8 lg:px-16 pb-16 ring-1 ring-neutral-700 bg-radial-[at_95%_5%] from-neutral-700 to-background to-40%'>
         <div className='flex flex-col lg:flex-row lg:gap-16 xl:gap-32 justify-between items-center py-24'>
           <div className='relative h-fit'>
             <div className='absolute -inset-2 rounded-lg bg-linear-to-r from-accent2 to-accent3 opacity-75 blur-lg animate-pulse'></div>
@@ -29,21 +30,22 @@ export const About = () => {
             <div className='flex items-center gap-4 mb-8'>
               <hr className='h-0.5 w-24 border-0 rounded-xl bg-accent2' />
               <p className='uppercase text-accent2 font-main text-lg'>
-                who we are
+                behind the code
               </p>
             </div>
             <p className='text-5xl xl:text-6xl font-main font-bold'>
-              A Collective of <br />
+              Where Passion <br />
               <span className='text-transparent bg-linear-to-r from-accent3 to-accent2 bg-clip-text'>
-                Digital Artisans
+                Meets Precision
               </span>
             </p>
             <p className='font-main text-lg xl:text-xl text-neutral-400 mt-8 leading-8'>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-              eligendi eum quos perspiciatis, voluptate eveniet minus labore
-              porro amet modi sapiente iste earum totam asperiores excepturi.
-              Aliquam laborum corporis ducimus! Lorem, ipsum dolor sit amet
-              consectetur adipisicing elit.
+              I&apos;m a full-stack developer with a passion for building clean,
+              user-focused web products. Every project gets my full attention
+              from start to finish because great software comes from
+              understanding the problem deeply and never settling for &apos;good
+              enough.&apos; When you work with me, you get direct collaboration
+              with the person writing every line of code.
             </p>
             <div className='flex justify-between mt-9'>
               <AboutCard
@@ -65,16 +67,17 @@ export const About = () => {
             <hr className='h-0.5 w-3/4 bg-linear-to-r from-accent3/30 to-transparent border-0 rounded-lg' />
           </div>
           <div className='flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16 xl:gap-32'>
-            <ProjectCard
-              title='ViceCity Go'
-              type='mobile'
-              link='https://www.google.com'
-            />
-            <ProjectCard
-              title='Neon Analytics'
-              type='web'
-              link='https://www.google.com'
-            />
+            {projects.map((item) => (
+              <ProjectCard
+                key={item.title}
+                thumbnail={item.thumbnail}
+                title={item.title}
+                type={item.type}
+                description={item.description}
+                link={item.link}
+                linkText={item.linkText}
+              />
+            ))}
           </div>
         </div>
       </div>

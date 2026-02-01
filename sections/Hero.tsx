@@ -22,12 +22,13 @@ export const Hero = () => {
         </p>
         <Logo />
         <div className='mt-4 xl:mt-6 w-3/4 lg:w-1/2'>
-          <p className='font-main text-neutral-400 lg:text-center text-justify text-[1rem] lg:text-lg xl:text-2xl xl:font-light'>
+          <p className='font-main text-neutral-400 lg:text-center text-justify text-[1rem] lg:text-lg xl:text-xl xl:font-light'>
             Modern web solutions with precision from concept to deployment.{" "}
-            <br className='hidden lg:inline-block' /> We craft digital
-            experiences that engage users and drive measurable results.{" "}
+            <br className='hidden lg:inline-block' /> I am dedicated to building
+            digital experiences that engage users and deliver real results.{" "}
             <em>No fluff, no shortcuts.</em> Just thoughtful engineering and
-            pixel-perfect execution. Your vision, brought to life.
+            pixel-perfect execution. Your vision, brought to{" "}
+            <span className='font-black italic'>life</span>.
           </p>
         </div>
         <div className='flex justify-center items-center gap-12 p-4 mt-8 xl:mt-12'>

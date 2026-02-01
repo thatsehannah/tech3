@@ -10,9 +10,8 @@ export const Services = () => {
         </p>
         <hr className='h-1 w-21 mt-2.5 mb-5 rounded-md border-0 bg-linear-to-r from-accent2 to-accent3' />
         <p className='font-main text-lg text-neutral-400 xl:w-1/2'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-          consectetur harum numquam sequi quis illum totam! Beatae molestiae
-          quae omnis aliquid corporis.
+          End-to-end development services designed to bring ideas to life. Clean
+          code, thoughtful design, and a focus on results that matter.
         </p>
         <div className='my-16 flex flex-col lg:flex-row justify-between items-center gap-6'>
           <ServiceCard
@@ -23,9 +22,7 @@ export const Services = () => {
                 size={48}
               />
             }
-            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit
-          ut molestiae temporibus autem tenetur tempora delectus quia deleniti
-          veniam.'
+            description='Fast, responsive, and scalable web applications built with modern frameworks. Built with clean architecture that scales as your business grows.'
           />
           <ServiceCard
             title='UI/UX Design'
@@ -35,9 +32,7 @@ export const Services = () => {
                 size={48}
               />
             }
-            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit
-          ut molestiae temporibus autem tenetur tempora delectus quia deleniti
-          veniam.'
+            description='User-centered design that balances aesthetics with functionality. Thoughtful layouts, clear navigation, and polished visuals that keep users engaged and coming back.'
           />
           <ServiceCard
             title='Mobile App Development'
@@ -47,9 +42,7 @@ export const Services = () => {
                 size={48}
               />
             }
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit
-          ut molestiae temporibus autem tenetur tempora delectus quia deleniti
-          veniam.'"
+            description='Cross-platform mobile applications that deliver native-quality experiences. Smooth performance, clean interfaces, and seamless functionality on iOS and Android.'
           />
         </div>
       </div>

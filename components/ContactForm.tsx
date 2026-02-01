@@ -1,8 +1,9 @@
-import React from "react";
 import { InputField } from "./InputField";
 import { TextareaField } from "./TextareaField";
 import { Send } from "lucide-react";
 
+//TODO: create zod schema for validation
+//TODO: install and use resend for sending emails
 export const ContactForm = () => {
   return (
     <div className='mt-12 flex flex-col w-full gap-8'>
