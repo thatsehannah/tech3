@@ -25,7 +25,7 @@ export const ProjectCard = ({
           <Image
             src={thumbnail}
             alt={`${title} image`}
-            className='h-auto lg:h-112 lg:object-cover object-contain rounded-t-lg'
+            className='h-auto w-full lg:h-112 2xl:h-130 lg:object-cover object-contain rounded-t-lg'
             width={800}
             height={600}
           />
