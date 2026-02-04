@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id='hero'
-      className='bg-grid-fade'
+      className='bg-grid-fade mask-x-from-90% mask-x-to-100% mask-y-from-80% mask-y-to-100%'
     >
       <div className='h-screen flex flex-col justify-center items-center -mt-12 md:mt-0 lg:p-8 xl:p-12'>
         <Banner className='gap-2 border-accent3 bg-accent3/20 mb-12'>

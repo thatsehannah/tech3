@@ -4,20 +4,14 @@ export const Logo = () => {
       <div className='flex flex-col justify-center items-center gap-2'>
         <div className='flex'>
           <div className='relative'>
-            <p className='absolute text-8xl lg:text-9xl xl:text-[10rem] font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text blur-xl opacity-40 font-logo'>
-              TECH
+            <p className='absolute text-6xl text-center lg:text-8xl font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text blur-xl opacity-40 font-logo'>
+              Third Gen Studio
             </p>
-            <p className='absolute text-8xl lg:text-9xl xl:text-[10rem] font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text blur-xl opacity-80 font-logo'>
-              TECH
+            <p className='absolute text-6xl text-center lg:text-8xl font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text blur-xl opacity-80 font-logo'>
+              Third Gen Studio
             </p>
-            <p className='relative text-8xl lg:text-9xl xl:text-[10rem] font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text inline-block pb-1 pr-4 font-logo italic'>
-              TECH
-            </p>
-          </div>
-
-          <div className='b-4 w-fit h-fit'>
-            <p className='text-4xl lg:text-5xl xl:text-6xl text-accent2 -ml-1 lg:ml-0.5 xl:ml-1 font-medium text-shadow-lg text-shadow-accent2 font-logo italic'>
-              3
+            <p className='relative text-6xl text-center lg:text-8xl font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text inline-block pb-1 pr-4 font-logo italic'>
+              Third Gen Studio
             </p>
           </div>
         </div>

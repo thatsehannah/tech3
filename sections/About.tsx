@@ -33,7 +33,7 @@ export const About = () => {
                 behind the engineer
               </p>
             </div>
-            <p className='text-5xl xl:text-6xl font-main font-bold'>
+            <p className='text-[2.9rem] leading-14 xl:text-6xl font-main font-bold'>
               Where Passion <br />
               <span className='text-transparent bg-linear-to-r from-accent3 to-accent2 bg-clip-text'>
                 Meets Precision

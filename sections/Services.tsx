@@ -6,10 +6,10 @@ export const Services = () => {
   return (
     <section id='services'>
       <div className='px-8 lg:px-16 pb-16'>
-        <p className='text-5xl font-main font-black'>
+        <p className='text-4xl lg:text-5xl font-main font-black'>
           Areas of <span className='text-accent3'>Expertise 👨🏾‍🎨</span>
         </p>
-        <hr className='h-1 w-33 mt-2.5 mb-5 rounded-md border-0 bg-linear-to-r from-accent2 to-accent3' />
+        <hr className='h-1 w-25 lg:w-34 mt-2 lg:mt-2.5 mb-5 rounded-md border-0 bg-linear-to-r from-accent2 to-accent3' />
         <p className='font-main text-lg text-neutral-400 xl:w-1/2'>
           End-to-end development services designed to bring ideas to life. Clean
           code, thoughtful design, and a focus on results that matter.
