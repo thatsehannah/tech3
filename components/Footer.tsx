@@ -68,8 +68,8 @@ export const Footer = () => {
           ))}
         </div>
         <p className='text-xs lg:text-sm font-main font-regular text-neutral-700'>
-          {new Date().getFullYear()} TECH<sup>3</sup>. Made in the A. All rights
-          reserved.
+          &copy; {new Date().getFullYear()}. Third Gen Studio. Made in the A.
+          All rights reserved.
         </p>
       </div>
     </footer>
