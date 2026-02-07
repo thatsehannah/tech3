@@ -30,32 +30,36 @@ export const SlotMachineCard = ({
 
       if (!container || !slot || !wrapper) return;
 
-      const initAnimation = () => {};
+      const initAnimation = () => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: container,
+            start: "top 85%",
+            end: "top 20%",
+            toggleActions: "play none none reverse",
+            invalidateOnRefresh: true,
+          },
+        });
 
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          start: "top 85%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
-          invalidateOnRefresh: true,
-        },
-      });
+        tl.fromTo(
+          wrapper,
+          { autoAlpha: 0, y: 20 },
+          { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        ).fromTo(
+          slot,
+          { yPercent: 0 },
+          {
+            yPercent: -(target / (target + 1)) * 100,
+            duration: 1.5,
+            ease: "power3.out",
+          },
+          "<",
+        );
+      };
 
-      tl.fromTo(
-        wrapper,
-        { autoAlpha: 0, y: 20 },
-        { autoAlpha: 1, y: 0, duration: 0.5, ease: "power2.out" },
-      ).fromTo(
-        slot,
-        { yPercent: 0 },
-        {
-          yPercent: -(target / (target + 1)) * 100,
-          duration: 1.5,
-          ease: "power3.out",
-        },
-        "<",
-      );
+      const timeout = setTimeout(initAnimation, 600);
+
+      return () => clearTimeout(timeout);
     },
     { scope: containerRef },
   );
