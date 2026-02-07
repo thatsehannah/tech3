@@ -4,9 +4,11 @@ import { ProjectCard } from "@/components";
 import { SlotMachineCard } from "@/components/SlotMachineCard";
 import { projects } from "@/data";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap/all";
+import gsap, { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const About = () => {
   const sectionRef = useRef<HTMLElement>(null);

@@ -3,8 +3,10 @@
 import { TechCard } from "@/components/TechCard";
 import { techStack } from "@/data";
 import { useGSAP } from "@gsap/react";
-import gsap from "gsap/all";
+import gsap, { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const TechStack = () => {
   const containerRef = useRef<HTMLElement>(null);

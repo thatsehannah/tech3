@@ -30,7 +30,7 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${tektur.variable}`}
     >
       <body className='bg-background text-foreground antialiased'>
-        <GSAPProvider>{children}</GSAPProvider>
+        {children}
       </body>
     </html>
   );

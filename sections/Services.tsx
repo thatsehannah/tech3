@@ -3,8 +3,11 @@
 import { ServiceCard } from "@/components";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import { Code, Palette, Smartphone } from "lucide-react";
 import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const Services = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
