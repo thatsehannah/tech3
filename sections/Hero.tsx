@@ -27,12 +27,6 @@ export const Hero = () => {
         { opacity: 1, delay: 1.5, duration: 1.8 },
         0,
       )
-      .fromTo(
-        ".shadow-1, .shadow-2",
-        { opacity: 0 },
-        { opacity: 1, duration: 1.3, delay: 2.5 },
-        0,
-      )
       .from(".intro", { autoAlpha: 0, duration: 1.3, delay: 3.6 }, 0)
       .from(
         ".cta-buttons a",
