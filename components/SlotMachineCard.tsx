@@ -66,7 +66,7 @@ export const SlotMachineCard = ({
 
   return (
     <div
-      className='ring-1 ring-neutral-700 rounded-md p-6 bg-background w-2/5'
+      className='ring-1 ring-neutral-700 rounded-md p-6 bg-background w-[45%] lg:w-2/5'
       ref={containerRef}
     >
       <div
@@ -90,7 +90,7 @@ export const SlotMachineCard = ({
         </div>
         {suffix && <span className='text-3xl'>{suffix}</span>}
       </div>
-      <p className='text-lg font-light font-main text-gray-300 uppercase mt-1'>
+      <p className='text-sm lg:text-lg font-light font-main text-gray-300 uppercase mt-1'>
         {subtext}
       </p>
     </div>

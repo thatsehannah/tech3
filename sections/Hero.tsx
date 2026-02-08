@@ -29,7 +29,7 @@ export const Hero = () => {
       )
       .from(".intro", { autoAlpha: 0, duration: 1.3, delay: 3.6 }, 0)
       .from(
-        ".cta-buttons a",
+        ".cta-buttons .link-btn",
         {
           y: 100,
           opacity: 0,

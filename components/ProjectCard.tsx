@@ -29,7 +29,7 @@ export const ProjectCard = ({
             width={800}
             height={600}
           />
-          <div className='flex items-center gap-3 justify-center absolute -bottom-6 right-4 rounded-2xl bg-neutral-900 w-fit p-3 ring-1 ring-neutral-200'>
+          <div className='flex items-center gap-3 justify-center absolute -bottom-6 right-4 rounded-2xl bg-neutral-900 w-fit p-2 lg:p-3 ring-1 ring-neutral-200'>
             {type === "mobile" ? (
               <Smartphone
                 className='fill-accent3 stroke-1'
