@@ -39,14 +39,25 @@ export const ContactForm = () => {
         borderWidth: 1,
         borderColor: "#fff",
       })
-      .to(".sonner", {
-        opacity: 1,
+      .to(".toast", {
+        autoAlpha: 1,
         duration: 0.4,
         delay: 0.2,
+      })
+      .to(".toast", {
+        autoAlpha: 0,
+        duration: 0.4,
+        delay: 5.6,
       });
   };
 
   const formMethods = form;
+
+  const testSubmit = async (data: NewMessage) => {
+    setSuccessMessage("This is success");
+    // setErrorMessage("This is messed up");
+    runSubmitAnimation();
+  };
 
   const onSubmit = async (data: NewMessage) => {
     try {
@@ -112,22 +123,24 @@ export const ContactForm = () => {
           </button>
         </form>
       </FormProvider>
-      {errorMessage && (
-        <div className='sonner opacity-0 bg-accent1 flex items-center justify-center gap-2 p-2 rounded-md mt-4'>
-          <CircleX className='stroke-white stroke-2 fill-red-600' />
-          <p className='font-main font-bold text-sm lg:text-[1rem]'>
-            {errorMessage}
-          </p>
-        </div>
-      )}
-      {successMessage && (
-        <div className='sonner opacity-0 bg-accent1 flex items-center justify-center gap-2 p-2 rounded-md mt-4'>
-          <CircleCheckBig className='stroke-white stroke-2 fill-green-600' />
-          <p className='font-main font-bold text-sm lg:text-[1rem]'>
-            {successMessage}
-          </p>
-        </div>
-      )}
+      <div className='toast opacity-0 '>
+        {errorMessage && (
+          <div className='bg-red-200 flex items-center justify-center gap-2 p-2 rounded-md mt-4'>
+            <CircleX className='stroke-neutral-900 stroke-2 fill-red-600' />
+            <p className='font-main font-bold text-neutral-900 text-sm lg:text-[1rem]'>
+              {errorMessage}
+            </p>
+          </div>
+        )}
+        {successMessage && (
+          <div className='bg-green-200 flex items-center justify-center gap-2 p-2 rounded-md mt-4'>
+            <CircleCheckBig className='stroke-neutral-900 stroke-2 fill-green-600' />
+            <p className='font-main font-bold text-neutral-900 text-sm lg:text-[1rem]'>
+              {successMessage}
+            </p>
+          </div>
+        )}
+      </div>
     </>
   );
 };

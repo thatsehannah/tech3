@@ -7,13 +7,16 @@ import { Resend } from "resend";
 export const sendBatchEmails = async (data: NewMessage) => {
   const resend = new Resend(process.env.RESEND_API_KEY as string);
 
+  const firstName =
+    data.name.indexOf(" ") > 0 ? data.name.split(" ")[0] : data.name;
+
   try {
     const response = await resend.batch.send([
       {
         from: `Third Gen Studio <${process.env.SENDER_EMAIL as string}>`,
         to: data.email,
         subject: "Thank you for your inquiry",
-        html: "<p>Thanks for contacting me. I'll be in touch soon!</p>",
+        html: `<p>Thanks ${firstName} for contacting me. I'll be in touch soon!</p>`,
       },
       {
         from: `Third Gen Studio <${process.env.SENDER_EMAIL as string}>`,
@@ -24,9 +27,9 @@ export const sendBatchEmails = async (data: NewMessage) => {
     ]);
 
     if (response.data) {
-      return "Thanks. I'll be in contact soon.";
+      return `Thanks ${firstName}. I'll be in contact soon.`;
     }
   } catch {
-    throw new Error("Sorry! Something went wrong 😑");
+    throw new Error(`Sorry ${firstName}! Something went wrong 😑`);
   }
 };

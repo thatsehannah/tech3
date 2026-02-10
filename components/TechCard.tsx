@@ -21,7 +21,9 @@ export const TechCard = ({ title, logo, link }: TechCardProps) => {
           width={80}
         />
       </div>
-      <p className='font-main text-sm text-neutral-400 font-bold'>{title}</p>
+      <p className='font-main text-sm text-center text-neutral-400 font-bold'>
+        {title}
+      </p>
     </a>
   );
 };
