@@ -1,6 +1,6 @@
 "use client";
 
-import { ProjectCarousel, SlotMachineCard } from "@/components";
+import { SlotMachineCard } from "@/components";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
