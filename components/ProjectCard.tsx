@@ -1,25 +1,16 @@
+import { ProjectItem } from "@/types";
 import { ArrowUpRight, Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
 
 interface ProjectCardProps {
-  thumbnail: string;
-  title: string;
-  type: "mobile" | "web";
-  description: string;
-  linkText: string;
-  link: string;
+  project: ProjectItem;
 }
 
-export const ProjectCard = ({
-  thumbnail,
-  title,
-  type,
-  description,
-  link,
-  linkText,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ project }: ProjectCardProps) => {
+  const { thumbnail, title, type, description, link, linkText } = project;
+
   return (
-    <div className='border-8 border-neutral-950 rounded-2xl w-fit lg:w-lg'>
+    <div className='border-8 border-neutral-950 rounded-2xl w-fit lg:w-2xl'>
       <div className='w-full'>
         <div className='relative'>
           <Image
