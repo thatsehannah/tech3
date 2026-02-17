@@ -83,9 +83,9 @@ export const Services = () => {
         className='w-full h-[125%] lg:h-full absolute -top-[25%] lg:top-0 object-[69%] object-cover brightness-0 origin-bottom'
       />
       <div className='services px-8 lg:px-16 pb-16'>
-        <p className='text-4xl lg:text-5xl font-main font-black'>
+        <h2 className='text-4xl lg:text-5xl font-main font-black'>
           Areas of <span className='text-accent3'>Expertise 👨🏾‍🎨</span>
-        </p>
+        </h2>
         <hr className='h-1 w-25 lg:w-34 mt-2 lg:mt-2.5 mb-5 rounded-md border-0 bg-linear-to-r from-accent2 to-accent3' />
         <p className='font-main text-lg text-neutral-400 xl:w-1/2'>
           End-to-end development services designed to bring ideas to life. Clean

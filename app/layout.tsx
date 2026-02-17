@@ -15,7 +15,51 @@ const tektur = Tektur({
 export const metadata: Metadata = {
   title: "Third Gen Studio",
   description:
-    "The official website for Third Gen Studio - showcasing services, portfolio, and expertise",
+    "I bring web and mobile products to life. React, Next.js, React Native, and TypeScript development services.",
+  openGraph: {
+    title: "Third Gen Studio",
+    description: "Building web and mobile products the right way",
+    url: "https://www.thirdgenstudio.dev",
+    images: [
+      {
+        url: "https://www.thirdgenstudio.dev/og_image.png",
+        width: 1200,
+        height: 630,
+        alt: "Third Gen Studio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Third Gen Studio",
+    description: "Building web and mobile products the right way",
+    images: ["https://www.thirdgenstudio.dev/og_image.png"],
+  },
+  icons: {
+    icon: "./icon.svg",
+    shortcut: "https://www.thirdgenstudio.dev/apple-icon.png",
+    apple: "https://www.thirdgenstudio.dev/apple-icon.png",
+  },
+  keywords: [
+    "software engineer",
+    "frontend",
+    "frontend engineer",
+    "full stack",
+    "full stack engineer",
+    "react.js",
+    "reactjs",
+    "react developer",
+    "react native",
+    "web development",
+    "web developer",
+    "mobile app development",
+    "app developer",
+    "typescript",
+    "javascript",
+    "next.js",
+    "consulting",
+  ],
 };
 
 export default function RootLayout({

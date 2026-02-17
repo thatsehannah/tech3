@@ -56,9 +56,9 @@ export const TechStack = () => {
     >
       <div className='px-8 lg:px-16 pt-6 lg:pt-10 pb-24 lg:pb-32'>
         <div className='flex flex-col justify-center items-center mx-auto w-fit'>
-          <p className='text-5xl font-main font-bold mb-4 text-center'>
+          <h2 className='text-5xl font-main font-bold mb-4 text-center'>
             The <span className='text-accent3'>Stack 🥞</span>
-          </p>
+          </h2>
           <p className='text-neutral-400 font-main text-lg text-center'>
             Powered by the most reliable modern technologies.
           </p>

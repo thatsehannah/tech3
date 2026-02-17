@@ -4,9 +4,9 @@ export const Logo = () => {
       <div className='flex flex-col justify-center items-center gap-2'>
         <div className='flex'>
           <div className='relative'>
-            <p className='logo relative text-6xl text-center lg:text-8xl font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text inline-block pb-1 pr-4 font-logo italic filter-[drop-shadow(0_0_23px_var(--accent3))_drop-shadow(0_0_10px_var(--accent2))]'>
+            <h1 className='logo relative text-6xl text-center lg:text-8xl font-extrabold text-transparent bg-linear-to-r from-accent3 from-30% via-white to-accent2 bg-clip-text inline-block pb-1 pr-4 font-logo italic filter-[drop-shadow(0_0_23px_var(--accent3))_drop-shadow(0_0_10px_var(--accent2))]'>
               Third Gen Studio
-            </p>
+            </h1>
           </div>
         </div>
       </div>
